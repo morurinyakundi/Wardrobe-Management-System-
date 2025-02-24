@@ -1,0 +1,14 @@
+Backend
+cd wardrobe-management
+
+php artisan serve
+
+# Install Laravel Breeze for authentication
+composer require laravel/breeze --dev
+php artisan breeze:install
+npm install && npm run dev
+php artisan migrate
+
+# Create models, migrations, and controllers for clothing items and categories
+php artisan make:model ClothingItem -mcr
+php artisan make:model Category -mcr
